@@ -2,15 +2,16 @@
 title: "README"
 author: "Eric Rodriguez"
 date: "July 25, 2015"
-output: html_document
 ---
 
 # Download and extract the data
 ```
 if (!file.exists("data")) { dir.create("data") }
 data.url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
 # If on Linux/Mac
-#download.file(data.url, destfile = "./data/UCI_HAR_Dataset.zip", method = 'curl')
+download.file(data.url, destfile = "./data/UCI_HAR_Dataset.zip", method = 'curl')
+
 # If on windows
 download.file(data.url, destfile = "./data/UCI_HAR_Dataset.zip")
 
